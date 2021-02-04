@@ -13,7 +13,7 @@ namespace ShortCodeTestAzureRepo.Controllers
     public class ListifyController : ControllerBase
     {
         [HttpGet]
-        [Route("listifyyy/{startRange?}/{endRange?}/{requestedIndex?}")]
+        [Route("listifyyyy/{startRange?}/{endRange?}/{requestedIndex?}")]
         [Route("listify/")]
         public ActionResult<IList<int>> Get(int? startRange, int? endRange, int? requestedIndex)
         {
