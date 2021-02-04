@@ -9,12 +9,12 @@ using System.Threading.Tasks;
 
 namespace ShortCodeTestAzureRepo.Controllers
 {
-    [Route("listify")]
     [ApiController]
     public class ListifyController : ControllerBase
     {
         [HttpGet]
-        [Route("{startRange?}/{endRange?}/{requestedIndex?}")]
+        [Route("listifyy/{startRange?}/{endRange?}/{requestedIndex?}")]
+        [Route("listify/")]
         public ActionResult<IList<int>> Get(int? startRange, int? endRange, int? requestedIndex)
         {
             if(startRange == null)
